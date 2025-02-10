@@ -1,0 +1,41 @@
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Common styles for sections */
+section {
+  padding: 80px 10%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff5733;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e74c3c;
+}

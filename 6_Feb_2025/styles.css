@@ -1,0 +1,54 @@
+/* Default Light Mode */
+body {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+}
+
+/* Dark mode for Bootstrap Components */
+.dark-mode .card {
+    background-color: #343a40 !important;
+    color: white !important;
+    border-color: #454d55 !important;
+}
+
+.dark-mode .card-header {
+    background-color: #495057 !important;
+    color: white !important;
+}
+
+.dark-mode .accordion-button {
+    background-color: #495057 !important;
+    color: white !important;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+    background-color: #6c757d !important;
+}
+
+.dark-mode .btn-primary {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.dark-mode .btn {
+    background-color: #6c757d !important;
+    color: white !important;
+    border-color: #6c757d !important;
+}
+
+/* Navbar */
+.dark-mode .navbar {
+    background-color: #343a40 !important;
+}
+
+.dark-mode .navbar .navbar-brand,
+.dark-mode .navbar .nav-link {
+    color: white !important;
+}

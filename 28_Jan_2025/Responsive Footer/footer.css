@@ -1,0 +1,145 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #ffa500;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Mobile Responsive Menu */
+  .navbar .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: #444;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .navbar .nav-links.active li {
+    margin: 10px 0;
+  }
+  
+  /* Main Content */
+  .content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-column {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ffa500;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  }
+  
